@@ -3,8 +3,6 @@ const webpack = require("webpack")
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 
-
-
 module.exports = {
   devtool: "source-map",
   entry: "./src/index.tsx",
