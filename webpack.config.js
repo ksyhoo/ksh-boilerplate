@@ -1,7 +1,9 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack")
+const {resolve} = require('path')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 module.exports = {
   devtool: "source-map",
@@ -50,6 +52,12 @@ module.exports = {
     new BundleAnalyzerPlugin({
       openAnalyzer: false,
       logLevel: 'warn',
+    }),
+    new ForkTsCheckerWebpackPlugin({
+      useTypescriptIncrementalApi: true,
+      checkSyntacticErrors: true,
+      tsconfig: resolve('./tsconfig.json'),
+      tslint: resolve('./tslint.json'),
     }),
     new FriendlyErrorsWebpackPlugin({
       compilationSuccessInfo: {
