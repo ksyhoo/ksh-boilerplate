@@ -1,9 +1,10 @@
 import * as React from 'react'
+import {Wrapper} from './styled'
 
 const App = () => (
-  <div>
+  <Wrapper>
     Boilerplate App
-  </div>
+  </Wrapper>
 
 )
 
