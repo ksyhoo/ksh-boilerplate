@@ -17,6 +17,7 @@
       ],
       "plugins": [
         "@babel/plugin-proposal-export-default-from",
+        "@babel/plugin-syntax-dynamic-import",
         "transform-runtime",
         "transform-es2015-modules-commonjs"
       ]

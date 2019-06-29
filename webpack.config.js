@@ -26,7 +26,24 @@ module.exports = {
             {
                 test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
-                use: ['babel-loader','eslint-loader', 'awesome-typescript-loader'],
+                use: 
+                    [
+                        {
+                            loader: 'babel-loader',
+                            options: {
+                                plugins: [
+                                    "@babel/plugin-syntax-dynamic-import",
+                                    "@babel/plugin-proposal-export-default-from",
+                                ]
+                            }
+                        },
+                        {
+                            loader: 'eslint-loader',
+                        },
+                        {
+                            loader: 'awesome-typescript-loader',
+                        }
+                    ]
             },
         ],
     },
