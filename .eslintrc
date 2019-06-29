@@ -6,8 +6,7 @@
     "parser": "@typescript-eslint/parser",
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -21,7 +20,13 @@
         "react",
         "@typescript-eslint"
     ],
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
     "rules": {
+        "react/no-unescaped-entities": "off",
         "@typescript-eslint/explicit-function-return-type": 0,
         "@typescript-eslint/no-unused-vars": ["error", {
             "vars": "all",
@@ -29,7 +34,7 @@
             "ignoreRestSiblings": false
           }],
         "@typescript-eslint/no-var-requires": 0,
-        "indent": ["error", 2],
-        "@typescript-eslint/indent": ["error", 2]
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-useless-constructor": "off"
     }
 }

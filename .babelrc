@@ -16,6 +16,7 @@
         "@babel/preset-react"
       ],
       "plugins": [
+        "@babel/plugin-proposal-export-default-from",
         "transform-runtime",
         "transform-es2015-modules-commonjs"
       ]

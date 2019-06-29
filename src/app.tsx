@@ -3,7 +3,7 @@ import {Wrapper} from './styled'
 
 const App = () => (
     <Wrapper>
-      Boilerplate App
+        Boilerplate App
     </Wrapper>
 )
 
