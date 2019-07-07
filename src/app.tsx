@@ -1,10 +1,6 @@
-import * as React from 'react'
-import {Wrapper} from './styled'
+import * as React from 'react';
+import {Wrapper} from './styled';
 
-const App = () => (
-    <Wrapper>
-        Boilerplate App
-    </Wrapper>
-)
+const App = () => <Wrapper>Boilerplate App</Wrapper>;
 
-export default App
+export default App;

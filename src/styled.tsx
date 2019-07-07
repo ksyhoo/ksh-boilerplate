@@ -5,6 +5,6 @@ export const Wrapper = styled.div`
   align-content: center;
   justify-content: center;
   @media (max-width: 640px) {
-    min-width: 100%
+    min-width: 100%;
   }
-`
+`;
